@@ -1,0 +1,11 @@
+<p>front works! {{ message }}</p>
+
+<div>
+    <h1>{{ user.name }} </h1>
+    <h3>{{ user.title }} </h3>
+    <h3>{{ user.address }} </h3>
+    <div *ngIf="user.name.length > 0">
+        <p>Phone </p>
+        <p *ngFor="let phoneNumber of user.phone" >{{ phoneNumber}}</p>
+    </div>
+</div>
